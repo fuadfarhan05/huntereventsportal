@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  text-align: center;
+}
+
+.event-cards {
+  background-color: #8261fb;
+  border-radius: 35px;
+  border: solid #282c34 5px;
+  color: white;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.event-text {
+  text-align: center;
+  margin: 20px;
+}
