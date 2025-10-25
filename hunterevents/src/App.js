@@ -9,12 +9,6 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <nav style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-        <Link to="/home">Home</Link>
-        <Link to="/form">Form</Link>
-        <Link to="/signin">Sign In</Link>
-      </nav>
-
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
