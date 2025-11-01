@@ -1,21 +1,19 @@
+
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Home from './pages/homepage';
-import Page from './pages/form';
-
-
+import Form from './pages/form';
+import SignIn from './pages/signin';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <nav style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-        <Link to="/home">Home</Link>
-        <Link to="/page">Page</Link>
-      </nav>
-
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/page" element={<Page />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </Router>
   );

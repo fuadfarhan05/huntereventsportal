@@ -1,4 +1,8 @@
+
 import React, { useState } from 'react';
+
+import '../App.css';
+
 
 // Reusable component
 function EventCard({ title, club, time, location, logo}) {
@@ -28,12 +32,15 @@ function EventCard({ title, club, time, location, logo}) {
 
 // Main homepage
 export default function Home() {
+
   const [search, setSearch] = useState("");
   const events = [
     { title: "Anime Club Meetup", club: "Anime Society", time: "3:00 PM", location: "Room 412" },
     { title: "Career Workshop", club: "Career Club", time: "2:00 PM", location: "Room 215" },
     { title: "Chess Tournament", club: "Chess Club", time: "5:00 PM", location: "Room 310" },
   ];
+
+
 
   const filteredEvents = events.filter(e =>
     e.title.toLowerCase().includes(search.toLowerCase()) ||
