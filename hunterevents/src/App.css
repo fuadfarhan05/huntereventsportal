@@ -1,58 +1,36 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.title {
-  text-align: center;
-}
-
-.event-cards {
-  background-color: #8261fb;
-  border-radius: 35px;
-  border: solid #282c34 5px;
-  color: white;
-  width: 200px;
-  height: 300px;
-  margin: 20px;
+body {
+  font-family: sans-serif;
+  background: #f6f6f6;
+  margin: 0;
   padding: 20px;
 }
 
-.event-text {
-  text-align: center;
-  margin: 20px;
+.homepage {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #7b61ff; /* your purple accent */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #6a4df3;
+
 }
