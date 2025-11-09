@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Club Event</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <form class="event-form" onsubmit="handleSubmit(event)">
+    <h2>Add your Club Event</h2>
+
+    <label for="club">Your Club Name</label>
+    <input type="text" id="club" name="club" required>
+
+    <label for="eventName">Event Name</label>
+    <input type="text" id="eventName" name="eventName" required>
+
+    <label for="time">Event Time</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="location">Event Location</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="rsvp">RSVP Required</label>
+    <select id="rsvp" name="rsvp">
+      <option value="No">No</option>
+      <option value="Yes">Yes</option>
+    </select>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4"></textarea>
+
+    <button type="submit">Create Event</button>
+  </form>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+
+      const formData = {
+        club: document.getElementById("club").value,
+        eventName: document.getElementById("eventName").value,
+        time: document.getElementById("time").value,
+        location: document.getElementById("location").value,
+        rsvp: document.getElementById("rsvp").value,
+        description: document.getElementById("description").value,
+      };
+
+      console.log(formData);
+      alert("Event Created! Check the console for details.");
+    }
+  </script>
+
+</body>
+</html>
