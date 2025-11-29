@@ -28,7 +28,7 @@ function SignIn() {
         setError(result.error);
       } else {
         // Successfully authenticated, redirect to home
-        navigate("/home");
+        navigate("/form");
       }
     } catch (err) {
       setError("An unexpected error occurred");
@@ -47,7 +47,7 @@ function SignIn() {
         setError(result.error);
       } else {
         // Successfully authenticated, redirect to home
-        navigate("/home");
+        navigate("/form");
       }
     } catch (err) {
       setError("An unexpected error occurred");

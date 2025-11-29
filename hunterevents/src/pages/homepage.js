@@ -50,11 +50,7 @@ export default function Home() {
   return (
     <div className="homepage" style={{ padding: "24px", backgroundColor: "#F8F9FA", minHeight: "100vh" }}>
       <header style={{ display: "flex", justifyContent: "space-between", marginBottom: "20px" }}>
-        <h1 style={{ color: "#4B0082" }}>Hunter Events Portal</h1>
-        <div style={{ display: "flex", gap: "10px" }}>
-          <button>Submit Event</button>
-          <button>Calendar View</button>
-        </div>
+        <h1 style={{ color: "#4B0082", fontWeight: 'bold' }}>Upcoming Events Happening TODAY!!</h1>
       </header>
 
       <input

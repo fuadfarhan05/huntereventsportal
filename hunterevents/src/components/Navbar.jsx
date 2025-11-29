@@ -24,31 +24,19 @@ export default function Navbar() {
                             alt="Hunter College Logo"
                             className="h-10 w-auto"
                         />
-                        <span className="text-xl font-bold font-condensed">Daily Events Portal</span>
-                       
+                        <span className="text-xl font-bold font-condensed">
+                            Daily Events Portal
+                        </span>
                     </Link>
 
                     <ul className="flex items-center space-x-6">
-                        <li>
-                            <Link
-                                to="/home"
-                                className="text-foreground hover:text-primary transition-colors font-medium"
-                            >
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/form"
-                                className="text-foreground hover:text-primary transition-colors font-medium"
-                            >
-                                Add Event
-                            </Link>
-                        </li>
+                        
+
+                        {/*
                         {currentUser ? (
                             <>
                                 <li className="text-sm text-muted-foreground">
-                                   Welcome, {currentUser.displayName || currentUser.email}
+                                    Welcome, {currentUser.displayName || currentUser.email}
                                 </li>
                                 <li>
                                     <button
@@ -69,6 +57,7 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         )}
+                        */}
                     </ul>
                 </div>
             </div>
